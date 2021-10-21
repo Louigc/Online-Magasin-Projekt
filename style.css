@@ -1,0 +1,648 @@
+/* CSS reset */
+*,
+:after,
+:before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing:border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+/* Jeg sørger for at farven på min side er den rigtige, så der ingen hvide linjer kommer*/
+.theme_page {
+    background-color: #2c345b;
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    color: white;
+}
+
+/* STYLLING TIL MIN FORSIDE*/
+
+/* Styling af top navigation bar*/
+.navbar {
+    overflow: hidden;
+    background-color: #3a476a;
+}
+
+/* Styling af top navaigation bar links*/
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 70px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Højre-aligned link*/
+.navbar a.right {
+    float: right;
+    padding-right: 100px;
+}
+
+/* Ændre farve på hover*/
+.navbar a:hover {
+    background-color: rgb(255, 245, 188);
+    color: black;
+}
+
+/* Ændre farven bag mit logo*/
+.logo {
+    background-color: #3a476a;
+}
+ /*Ændring af størrelsen af mit logo */
+.cstvlogo {
+    width: 250px;
+}
+
+/* Ændring af størrelse og placering af det største billede */
+.mainimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    position: relative; left: 225px; 
+}
+
+/* Ændring af farven på teksten og baggrunden*/
+.main {
+    background-color: #2c345b;
+    color: white;
+}
+
+/* Ændre størrelsen på den første overskrift - CSGO*/
+.overskrift {
+    font-size: 55px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.underoverskrift{
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Ændre størrelsen på mine billeder, sætter min baggrundsfarve på*/
+
+.artikel1 {  
+    width: 75%;
+    padding: 10px;
+    display: block;
+    margin-top: 40px;
+    float:left;
+    position: relative; left: 175px; 
+}
+
+.artikel2 {  
+    width: 75%;
+    padding: 10px;
+    display: block;
+    margin-top: 40px;
+    float: right;
+    position: relative; right: 175px; 
+}
+
+/* Ændre størrelsen på mine billeder, sætter min baggrundsfarve på*/
+.undersection {
+    display: flex;
+    background-color: #2c345b;
+}
+
+.underartikel1 {  
+    width: 75%;
+    padding: 10px;
+    display: block;
+    margin-top: 40px;
+    float:left;
+    position: relative; left: 170px; 
+}
+
+.underartikel2 {  
+    width: 75%;
+    padding: 10px;
+    display: block;
+    margin-top: 40px;
+    float: right;
+    position: relative; right: 170px; 
+}
+
+.bottomsection {
+    display: flex;
+    background-color: #2c345b;
+}
+
+/* Ændre størrelsen på mit sidste billed, jeg for det til at sidde i midten og jeg sætter min baggrundsfarve på*/
+
+.breakingartikel {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+    background-color: #2c345b;
+    margin-top: 45px;
+    position: relative; left: 275px;
+}
+
+.billedenpf {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+    background-color: #2c345b;
+    margin-top: 45px;
+    position: relative; left: 275px;
+}
+/* Stylling af Page footer og dens sections */
+.some_image {
+    width: 32px;
+    margin-right: 16px;
+    margin-top: 16px;
+}
+
+.page_footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 15.625rem;
+    background-color: #3a476a;
+    color: white;
+}
+
+.page_footer_information {
+    margin-top: 20px;
+    text-decoration: none;
+    color:white;
+}
+
+@media only screen and (min-width: 37.5rem) {
+    .page_footer {
+        flex-direction: row;
+        height: 12.5rem;
+    }
+
+    .page_footer_section {
+        height: 8.75rem;
+    }
+
+    .quality_flexbox {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .offer {
+        font-size: 1.7rem;
+        padding-top: 13px;
+    }
+}
+
+/* STYLLING TIL MIN ARTIKEL*/
+
+/* Stylling af min overskrift, så det får den rigtige str. og placering*/
+.artikeloverskrift {
+    font-size: 70px;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+.artikelunderskrift {
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.artikelbillede {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    height: 800px;
+    margin-top: 30px;
+}
+
+.smalltext{ 
+    color: white;
+    text-align: left;
+    padding-left: 120px;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.tekstartikel {
+    line-height: 1.5;
+    color: white;
+    padding-left: 120px;
+    text-decoration: none;
+}
+
+.tekst1 {
+    color: white;
+    font-size: 20px;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.tekst {
+    color: white;
+    font-size: 20px;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.tipm {
+    color: white;
+    text-align: left;
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+.tip {
+    color: white;
+    text-align: left;
+    font-size: 27px;
+    margin-top: 15px;
+}
+
+.tipt {
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+/* STYLLING TIL MIN GUIDE*/
+
+.guideartikel {
+    line-height: 1.5;
+    color: white;
+    padding-left: 120px;
+    text-decoration: none;
+}
+
+.artikelunderskrift {
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.linknon {
+    text-decoration: none;
+    list-style-type: none;
+}
+/* STYLLING TIL MIT FORUM*/
+
+.forumartikel {
+    color: white;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.forumoverskrift {
+    font-size: 45px;
+}
+
+.forumunderskrift {
+    font-size: 20px;
+}
+
+.boks1 {
+    width: 1225px;
+    padding: 10px;
+    border: 1px solid black;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.boks2 {
+    width: 1225px;
+    padding: 10px;
+    border: 1px solid black;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.boks3 {
+    width: 1225px;
+    padding: 10px;
+    border: 1px solid black;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.boks4 {
+    width: 1225px;
+    padding: 10px;
+    border: 1px solid black;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.boks5 {
+    width: 1225px;
+    padding: 10px;
+    border: 1px solid black;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.boks6 {
+    width: 1225px;
+    padding: 10px;
+    border: 1px solid black;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.bokstitel {
+    color: #80a1ec;
+    font-size: 25px;
+}
+
+.bokstekst {
+    font-size: 18px;
+    line-height: 1.5;
+    color: white;
+}
+
+/* STYLLING TIL MIN LOGIN SIDE, SOM IKKE ER EN AF DE TRE ARTIKLER JEG SELV HAR PROGRAMMERET*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+html {
+  background-color: #2c345b;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+}
+
+a {
+  color: #92badd;
+  display:inline-block;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+h2 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  display:inline-block;
+  margin: 40px 8px 10px 8px; 
+  color: #cccccc;
+}
+
+/* STRUCTURE */
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column; 
+  justify-content: center;
+  width: 100%;
+  min-height: 100%;
+  padding: 20px;
+}
+
+#formContent {
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  background: #fff;
+  padding: 30px;
+  width: 90%;
+  max-width: 450px;
+  position: relative;
+  padding: 0px;
+  -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+  box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+#formFooter {
+  background-color: #f6f6f6;
+  border-top: 1px solid #dce8f1;
+  padding: 25px;
+  text-align: center;
+  -webkit-border-radius: 0 0 10px 10px;
+  border-radius: 0 0 10px 10px;
+}
+
+h2.inactive {
+  color: #cccccc;
+}
+
+h2.active {
+  color: #0d0d0d;
+  border-bottom: 2px solid #2c345b;
+}
+
+input[type=button], input[type=submit], input[type=reset]  {
+  background-color: #2c345b;
+  border: none;
+  color: white;
+  padding: 15px 80px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 13px;
+  -webkit-box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+  box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  margin: 5px 20px 40px 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover  {
+  background-color: #2c345b;
+}
+
+input[type=button]:active, input[type=submit]:active, input[type=reset]:active  {
+  -moz-transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+  -o-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+input[type=text] {
+  background-color: #f6f6f6;
+  border: none;
+  color: #0d0d0d;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px;
+  width: 85%;
+  border: 2px solid #f6f6f6;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+input[type=text]:focus {
+  background-color: #fff;
+  border-bottom: 2px solid #2c345b;
+}
+
+input[type=text]:placeholder {
+  color: #cccccc;
+}
+
+/* ANIMATIONS */
+
+/* Simple CSS3 Fade-in-down Animation */
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+/* Simple CSS3 Fade-in Animation */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fadeIn {
+  opacity:0;
+  -webkit-animation:fadeIn ease-in 1;
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.fadeIn.first {
+  -webkit-animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.fadeIn.second {
+  -webkit-animation-delay: 0.6s;
+  -moz-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.fadeIn.third {
+  -webkit-animation-delay: 0.8s;
+  -moz-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+.fadeIn.fourth {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.underlineHover:after {
+  display: block;
+  left: 0;
+  bottom: -10px;
+  width: 0;
+  height: 2px;
+  background-color:#2c345b;
+  content: "";
+  transition: width 0.2s;
+}
+
+.underlineHover:hover {
+  color: #0d0d0d;
+}
+
+.underlineHover:hover:after{
+  width: 100%;
+}
+
+*:focus {
+    outline: none;
+} 
+
+#icon {
+  width:60%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* STYLLING AF MIT GALLERI */
+.gallerioverskrift {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 40px;
+}
+
+.galleritekst{
+    text-align: center;
+}
+
+.NPFbilleder {
+    margin-left: 400px;
+    margin-top: 25px;
+    width: 50%;
+    height: 50%;
+}
+
+.NPFbilleder1 {
+    margin-left: 440px;
+    margin-top: 25px;
+    width: 40%;
+    height: 25%;
+    
+}
